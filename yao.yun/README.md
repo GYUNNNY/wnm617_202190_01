@@ -5,6 +5,10 @@
 - Website: http://yunyao31.com
 - About me: http://yunyao31.com/aau/wnm617/yao.yun/
 - 
+## SIDE assignments
+
+-http://yunyao31.com/aau/wnm617/yao.yun/initializr/
+
 
 ## Perhaps Some Notes
 
