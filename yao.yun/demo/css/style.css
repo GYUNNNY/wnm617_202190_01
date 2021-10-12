@@ -1,11 +1,12 @@
+
 :root {
     --color-neutral-light: #ddd;
     --color-neutral-medium: #999;
     --color-neutral-dark: #444;
 
-    --color-main-light: #fdeecd;
-    --color-main-medium: #dbb942;
-    --color-main-dark: #330f2c;
+    --color-main-light: #def2f9;
+    --color-main-medium: #40a3c4;
+    --color-main-dark: #0f4557;
 }
 
 * {
@@ -15,7 +16,7 @@
 
 
 .accordion dt {
-    background-color: var(--color-main-medium);
+    background-color: #40a3c4;
     color: white;
     padding: 0.5em 1em;
     letter-spacing: 0.2em;
@@ -27,7 +28,7 @@
 .accordion dd {
     padding: 1em;
     margin: 0;
-    border: 2px solid var(--color-main-medium);
+    border: 2px solid #40a3c4;
     border-top-width: 0;
     display: none;
 }
