@@ -20,6 +20,8 @@
 </head>
 <body>
 
+
+<!-- signin -->
    <section data-role="page" id="page-signin">
       <div data-role="main" class="display-flex flex-vertical">
          <div class="flex-stretch"></div>
@@ -40,6 +42,8 @@
       </div>
    </section>
 
+
+<!-- signup -->
    <section data-role="page" id="page-signup">
       <div data-role="main" class="display-flex flex-vertical">
          <div class="flex-stretch"></div>
@@ -67,10 +71,18 @@
       </div>
    </section>
 
+
+<!-- MAP -->
    <section data-role="page" id="page-recent">
       <div data-role="main">
          <div class="map">
          </div>
+
+ <div class="flex-stretch form-control">
+               <form action="" class="form-search">
+                  <input class="search-bar" type="text" name="search" placeholder="Search">
+               </form>
+            </div>
 
          <div class="floater bottom right">
             <a href="#" class="btn-circle" data-activate="#recent-add-modal">&plus;</a>
@@ -94,14 +106,16 @@
       </div>
       <footer data-role="footer">
          <ul>
-            <li><a href="#page-recent">Recent</a></li>
-            <li><a href="#page-mapg">Map</a></li>
+           <!--  <li><a href="#page-recent">Recent</a></li> -->
+            <li><a href="#page-map">Map</a></li>
             <li><a href="#page-list">List</a></li>
             <li><a href="#page-user-profile">Profile</a></li>
          </ul>
       </footer>
    </section>
 
+
+<!-- LIST -->
    <section data-role="page" id="page-list">
       <div data-role="main">
          <div class="overscroll floater fill-parent">
@@ -176,12 +190,15 @@
       </div>
       <footer data-role="footer">
          <ul>
-            <li><a href="#page-recent">Recent</a></li>
+          <!--   <li><a href="#page-recent">Recent</a></li> -->
+             <li><a href="#page-map">Map</a></li>
             <li><a href="#page-list">List</a></li>
             <li><a href="#page-user-profile">Profile</a></li>
          </ul>
       </footer>
 
+
+<!-- Modal -->
       <div class="modal" id="list-add-modal">
          <div class="modal-back" data-deactivate="#list-add-modal"></div>
          <form class="modal-popup form" id="list-add-form" data-ajax="false">
@@ -217,6 +234,7 @@
       <footer data-role="footer">
          <ul>
             <li><a href="#page-recent">Recent</a></li>
+            <li><a href="#page-map">Map</a></li>
             <li><a href="#page-list">List</a></li>
             <li><a href="#page-user-profile">Profile</a></li>
          </ul>
