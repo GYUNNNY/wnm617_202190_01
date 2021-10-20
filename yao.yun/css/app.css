@@ -1,18 +1,18 @@
 :root {
-    --color-neutral-light: #ddd;
-    --color-neutral-medium: #999;
-    --color-neutral-dark: #444;
+    --color-neutral-light: #8cbbf1;
+    --color-neutral-medium: #6b81b8;
+    --color-neutral-dark: #0d2162;
 
-    --color-main-light: #def2f9;
-    --color-main-medium: #40a3c4;
-    --color-main-dark: #0f4557;
+    --color-main-light: #f7c554;
+    --color-main-medium: #e57e38;
+    --color-main-dark: #075b78;
 
     --color-white: #fff;
     --color-black: #111;
 
 
-    --font-sans: Helvetica, Arial, sans-serif;
-    --font-serif: Cambria, Georgia, serif;
+    --font-sans: Roboto, Arial, sans-serif;
+    --font-serif: Merriweather, serif;
 
     --header-height:  3rem;
 }
@@ -35,7 +35,11 @@ a {
    font-weight: bold;
 }
 
-
+p {
+  display: block;
+  text-align: center;
+  color: var(--color-main-dark);
+}
 
 
 /* LAYOUT CLASSES */
@@ -57,6 +61,15 @@ a {
 .overscroll { overflow: auto; }
 .overscroll-x { overflow-x: auto; }
 .overscroll-y { overflow-y: auto; }
+
+
+.position-relative { position:relative; }
+.position-absolute { position:absolute; }
+
+.padding-sm { padding:0.5em; }
+.padding-md { padding:1em; }
+.padding-lg { padding:2em; }
+
 
 .fill-parent {
    width: 100%;
@@ -128,6 +141,7 @@ a {
    margin: 0;
    font-size: 1rem;
    padding: 0;
+   color: var(--color-main-dark);
 }
 
 
@@ -197,7 +211,24 @@ a {
    background-position: center;
 }
 
+.search-bar {
 
+}
+
+/* GENERIC NAV */
+.nav {
+   list-style-type: none;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-left: 0;
+   display: flex;
+}
+.nav li {
+   flex: 1 1 auto;
+   padding: 0 1em;
+   text-align: center;
+   line-height: var(--header-height);
+}
 
 
 
@@ -317,4 +348,91 @@ a {
    width: 1em;
    height: 1em;
    display: inline-block;
+}
+
+.nav-icon {
+   display: block;
+   line-height: 2rem;
+   font-size: 1.5rem;
+}
+.nav-icon .icon {
+   vertical-align: middle;
+}
+.nav-icon-label {
+   display: block;
+   line-height: 1rem;
+   font-size: 0.7rem;
+}
+.nav-icon-set li.active {
+   background-color: var(--color-main-light);
+}
+
+
+/* USER PROFILE */
+.profile-img {
+  height: 15vh;
+  width: 15vh;
+  border-radius: 6em;
+  border: none;
+  margin: 3em 0 1em 2em;
+  background-image: url(../img/profile1.jpg);
+  background-size: cover;
+  background-position: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+
+
+/* ANIMAL LIST */
+.animallist {
+   list-style-type: none;
+   margin: 0;
+   padding: 1em;
+}
+.animallist-item~.animallist-item {
+   margin-top: 1em;
+}
+.animallist-item a {
+    box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+    border-radius: 1em;
+    overflow: hidden;
+    font-weight: normal;
+}
+.animallist-item-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.animallist-item-description {
+}
+.animallist-item-name {
+   font-size: 1.5em;
+}
+.animallist-item-type,
+.animallist-item-breed {
+   font-size: 0.9em;
+}
+
+
+
+
+
+/* ANIMAL PROFILE */
+.animal-profile-top {
+   flex: none;
+   height: 40vh;
+}
+.animal-profile-bottom {
+   flex: 1 1 auto;
+   position: relative;
+}
+
+
+.floating-header {
+   position: absolute;
+   background-color: rgba(255,255,255,0.15);
+   width: 100%;
+   top: 0;
+   left: 0;
+   box-shadow: none;
 }
