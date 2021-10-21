@@ -195,8 +195,18 @@ p {
 
 
 
-
-
+/*login-img*/
+#login-image {
+  position: absolute;
+  margin-top: 40%;
+  /*padding: 5em 2em 5em 2em;*/
+  left: 0;
+  width: 100%;
+  height: 30%;
+ /* background-image: url(../img/loginimage.png);*/
+  background-size: cover;
+  background-position: center;
+}
 
 
 
@@ -212,7 +222,7 @@ p {
 }
 
 .search-bar {
-
+border-radius: 2em;
 }
 
 /* GENERIC NAV */
@@ -243,7 +253,7 @@ p {
 /* Circle Button */
 .btn-circle {
    display: inline-block;
-   background-color: var(--color-white);
+   background-color: var(--color-neutral-light);
    width: 3rem;
    height: 3rem;
    line-height: 3rem;
@@ -345,15 +355,15 @@ p {
 
 
 .icon {
-   width: 1em;
-   height: 1em;
+   width: 1.5em;
+   height: 1.5em;
    display: inline-block;
 }
 
 .nav-icon {
    display: block;
    line-height: 2rem;
-   font-size: 1.5rem;
+   font-size: 1.2rem;
 }
 .nav-icon .icon {
    vertical-align: middle;
@@ -362,6 +372,7 @@ p {
    display: block;
    line-height: 1rem;
    font-size: 0.7rem;
+   color: var(--color-black);
 }
 .nav-icon-set li.active {
    background-color: var(--color-main-light);
@@ -384,7 +395,6 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 }
 
-
 /* ANIMAL LIST */
 .animallist {
    list-style-type: none;
@@ -395,26 +405,39 @@ p {
    margin-top: 1em;
 }
 .animallist-item a {
-    box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+    border: .1em solid var(--color-main-light);
     border-radius: 1em;
     overflow: hidden;
     font-weight: normal;
+    margin-top: 40px;
 }
+
+
 .animallist-item-image img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    border-radius: 20%;
+    padding: .5em;
+  /*  padding-top: auto;*/
+   /* padding-bottom: auto;*/
     object-fit: cover;
     vertical-align: middle;
+      
 }
 .animallist-item-description {
 }
 .animallist-item-name {
    font-size: 1.5em;
+   color: var(--color-main-dark);
 }
 .animallist-item-type,
 .animallist-item-breed {
    font-size: 0.9em;
+   color: var(--color-main-medium)
 }
+
+
+ 
 
 
 
@@ -422,20 +445,31 @@ p {
 
 /* ANIMAL PROFILE */
 .animal-profile-top {
-   flex: none;
-   height: 40vh;
+  /* flex: none;*/
+   height: 35vh;
+   margin-top: 0;
+   /*border-radius: 5em;*/
+
+   background-image: url(../img/puppy1.jpg);
+   background-size: cover;
+   background-position: center;
 }
 .animal-profile-bottom {
    flex: 1 1 auto;
    position: relative;
 }
 
-
+.animal-profile-middle {
+  font: var(--font-sans);
+  font-size: 0.9em;
+  color: var(--color-main-dark);
+}
 .floating-header {
    position: absolute;
-   background-color: rgba(255,255,255,0.15);
+   background-color: white;
    width: 100%;
    top: 0;
    left: 0;
+
    box-shadow: none;
 }
