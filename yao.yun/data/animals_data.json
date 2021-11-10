@@ -1,0 +1,122 @@
+[
+  {
+    "id": 0,
+    "user_id": 6,
+    "name": "Curry Espinoza",
+    "type": "dog",
+    "breed": "dashshund",
+    "description": "Labore eiusmod cupidatat commodo reprehenderit nulla incididunt laborum. Anim aliqua occaecat adipisicing do ullamco officia nisi ea mollit. Qui ipsum ullamco consectetur nostrud elit ipsum magna ullamco velit laboris do irure tempor.",
+    "img": "https://via.placeholder.com/400/816/fff/?text=Curry Espinoza",
+    "date_create": "2021-07-0510:57:28"
+  },
+  {
+    "id": 1,
+    "user_id": 5,
+    "name": "Dunlap Mcintosh",
+    "type": "cat",
+    "breed": "ragdoll",
+    "description": "Voluptate commodo elit est non aute deserunt ad magna ut sit fugiat fugiat aliqua dolor. Duis sunt sit laborum quis non enim. Minim ullamco labore non voluptate enim duis.",
+    "img": "https://via.placeholder.com/400/894/fff/?text=Dunlap Mcintosh",
+    "date_create": "2020-08-0501:45:16"
+  },
+  {
+    "id": 2,
+    "user_id": 3,
+    "name": "Carver Snow",
+    "type": "horse",
+    "breed": "arabian",
+    "description": "Duis aliquip esse commodo esse exercitation labore anim anim pariatur exercitation dolore deserunt. Ullamco enim cupidatat esse aliqua eiusmod adipisicing cillum fugiat mollit irure voluptate magna. Excepteur aute do pariatur est occaecat laboris velit.",
+    "img": "https://via.placeholder.com/400/852/fff/?text=Carver Snow",
+    "date_create": "2020-05-1312:14:26"
+  },
+  {
+    "id": 3,
+    "user_id": 6,
+    "name": "Cathy Christensen",
+    "type": "cat",
+    "breed": "ragdoll",
+    "description": "Elit quis dolore ea proident magna velit veniam excepteur nostrud cillum ut est. Ipsum dolore sint voluptate minim eiusmod excepteur cillum pariatur adipisicing nisi. Veniam et voluptate sint aliquip nulla proident do pariatur.",
+    "img": "https://via.placeholder.com/400/991/fff/?text=Cathy Christensen",
+    "date_create": "2020-04-2807:33:59"
+  },
+  {
+    "id": 4,
+    "user_id": 5,
+    "name": "Riley Schneider",
+    "type": "horse",
+    "breed": "arabian",
+    "description": "Magna deserunt consectetur ex est enim non laboris ullamco do. Cillum consequat culpa incididunt elit dolore esse est pariatur sit qui qui pariatur ut enim. Elit incididunt adipisicing velit excepteur aute laboris tempor sunt elit nostrud esse.",
+    "img": "https://via.placeholder.com/400/711/fff/?text=Riley Schneider",
+    "date_create": "2021-02-2505:52:25"
+  },
+  {
+    "id": 5,
+    "user_id": 7,
+    "name": "Whitley Marquez",
+    "type": "cat",
+    "breed": "siamese",
+    "description": "Culpa ullamco excepteur veniam sunt non irure id deserunt amet. Non nostrud non velit sunt ad deserunt. Irure magna aliqua labore exercitation Lorem quis proident pariatur reprehenderit voluptate elit irure.",
+    "img": "https://via.placeholder.com/400/944/fff/?text=Whitley Marquez",
+    "date_create": "2020-08-1708:39:37"
+  },
+  {
+    "id": 6,
+    "user_id": 4,
+    "name": "Susie Rosales",
+    "type": "cat",
+    "breed": "ragdoll",
+    "description": "Minim cillum veniam mollit commodo cupidatat non eu ullamco in deserunt. Laborum pariatur minim do excepteur reprehenderit quis nulla adipisicing in quis. Occaecat veniam exercitation sit dolor esse aliquip commodo laborum magna et.",
+    "img": "https://via.placeholder.com/400/933/fff/?text=Susie Rosales",
+    "date_create": "2020-02-0608:42:13"
+  },
+  {
+    "id": 7,
+    "user_id": 8,
+    "name": "Mclaughlin Petty",
+    "type": "cat",
+    "breed": "ragdoll",
+    "description": "Ipsum aliqua consectetur ea incididunt anim deserunt. In eu magna minim reprehenderit laboris anim ut. Consequat nulla laborum duis ipsum ullamco reprehenderit non irure aute voluptate.",
+    "img": "https://via.placeholder.com/400/981/fff/?text=Mclaughlin Petty",
+    "date_create": "2020-03-0210:32:25"
+  },
+  {
+    "id": 8,
+    "user_id": 7,
+    "name": "Parks Whitney",
+    "type": "dog",
+    "breed": "husky",
+    "description": "Do excepteur adipisicing esse laborum deserunt nulla anim commodo consectetur enim laboris officia esse. Irure aliquip cillum laboris elit fugiat quis magna eu eu sit elit cillum. Nulla ad qui duis velit dolor commodo labore.",
+    "img": "https://via.placeholder.com/400/868/fff/?text=Parks Whitney",
+    "date_create": "2021-09-2912:21:53"
+  },
+  {
+    "id": 9,
+    "user_id": 1,
+    "name": "Elba Kerr",
+    "type": "cat",
+    "breed": "siberian",
+    "description": "Id veniam in sint laboris. Sit ullamco non fugiat ullamco consectetur irure adipisicing qui consequat sit est eu id consequat. Duis consectetur occaecat nostrud laborum labore elit eiusmod.",
+    "img": "https://via.placeholder.com/400/744/fff/?text=Elba Kerr",
+    "date_create": "2021-03-1208:02:12"
+  },
+  {
+    "id": 10,
+    "user_id": 8,
+    "name": "Arlene Bowen",
+    "type": "dog",
+    "breed": "husky",
+    "description": "Velit do occaecat proident ad Lorem aute aliquip ex fugiat tempor dolore. Ad deserunt occaecat qui eu dolor amet. Nisi non in veniam laborum elit irure aliquip laborum voluptate cupidatat ea nisi.",
+    "img": "https://via.placeholder.com/400/898/fff/?text=Arlene Bowen",
+    "date_create": "2020-12-2601:08:52"
+  },
+  {
+    "id": 11,
+    "user_id": 2,
+    "name": "Daisy Miranda",
+    "type": "dog",
+    "breed": "husky",
+    "description": "Irure ut nulla sit mollit ea. Eu elit adipisicing in eu voluptate voluptate voluptate ipsum nulla do ad exercitation et aute. Labore dolore commodo velit ullamco et pariatur ipsum.",
+    "img": "https://via.placeholder.com/400/867/fff/?text=Daisy Miranda",
+    "date_create": "2020-04-0409:11:44"
+  }
+]

@@ -1,0 +1,1 @@
+[28-Oct-2021 03:46:14 UTC] PHP Warning:  Use of undefined constant makeResults - assumed 'makeResults' (this will throw an Error in a future version of PHP) in /home/hamil19/public_html/hdraws/aau/wnm617/cline.hamilton/data/api.php on line 31
