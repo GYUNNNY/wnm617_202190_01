@@ -26,22 +26,20 @@
 
 // ANIMALS DATA
 [
-  '{{repeat(5, 15)}}',
+  '{{repeat(50)}}',
   {
-    id: '{{index()}}',
+    id: '{{index(1)}}',
+    user_id: '{{integer(1,10)}}',
     
-    user_id:'{{integer(1,10)}}',
+    name: '{{company()}}',
     
-    name: '{{firstName()}} {{surname()}}',
-    
-    type: '{{random("horse", "dog", "cat")}}',
-    
+    type: '{{random("horse","dog","cat")}}',
     breed: function(tags) {
       var breeds = {
-        dog:["husky","pomeranian", "dashshund"],
-        cat: ["siberian","siamese","ragdoll"],
-        horse: ["arabian","friesian","appaloosa"]
-      };   
+        dog:["labrador","pitbull","dachsund"],
+        cat:["calico","ginger","tuxedo","siamese"],
+        horse:["shetland","andalusian","unicorn"]
+      };
       var chosen_type = breeds[this.type];
       var chosen_index = tags.integer(0,chosen_type.length-1);
       return chosen_type[chosen_index];
@@ -49,16 +47,14 @@
     
     description: '{{lorem(3,"sentences")}}',
     
-   img: function(tags) {
-     return 'https://via.placeholder.com/400/'+
-       tags.integer(700,999)+'/fff/?text=' + this.name;
-     
+    img: function(tags) {
+      return 'https://via.placeholder.com/400/'+
+        tags.integer(700,999) + '/fff/?text=' + this.name;
     },
-    date_create: '{{date(new Date (2020, 0, 1), new Date(), "YYYY-MM-ddhh:mm:ss")}}'
-    
+    date_create: '{{date(new Date(2020, 0, 1), new Date(), "YYYY-MM-dd hh:mm:ss")}}'
   }
-  
-]
+] 
+
 
 // LOCATIONS DATA
 [
