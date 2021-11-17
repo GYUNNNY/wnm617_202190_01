@@ -14,7 +14,16 @@
    <script src="lib/js/jquery-2.2.4.min.js"></script>
 
    <script src="js/app.js"></script>
+   <script src="js/functions.js"></script>
+   <script src="js/pages.js"></script>
+   <script src="js/parts.js"></script>
    <script src="js/signin.js"></script>
+
+    <script>
+
+      src="https://maps.googleapis.com/maps/api/js?key=  AIzaSyDl3fGfEBTH-va9-OCAXgakUIVgdVNFaGg"
+      async
+    </script>
 
    <script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
 </head>
@@ -186,11 +195,7 @@ fill="#000000" stroke="none">
 
 
 <!-- LIST -->
-   <section data-role="page" id="page-list">
-   <!--  <header data-role="header" class="floating-header">
-         <h1>Animal List</h1>
-         
-      </header> -->
+  <!--  <section data-role="page" id="page-list">
 
       <div data-role="main">
          <div class="overscroll floater fill-parent">
@@ -216,7 +221,29 @@ fill="#000000" stroke="none">
          </div>
       </div>
       <footer data-role="footer" data-template="#footer-template"></footer>
+   </section> -->
+
+      <!-- List -->
+<section data-role="page" id="page-list">
+      <div data-role="main">
+         <div class="overscroll floater fill-parent">
+            <div class="animallist">
+               
+            </div>
+         </div>
+
+         <div class="floater bottom right">
+            <a href="#page-animal-add" class="btn-circle">&plus;</a>
+         </div>
+      </div>
+      <footer data-role="footer" data-template="#footer-template"></footer>
    </section>
+
+   <section data-role="page" id="page-user-profile">
+      <div data-role="main" class="overscroll"></div>
+      <footer data-role="footer" data-template="#footer-template"></footer>
+   </section>
+
 
 
    <!-- USER PROFILE -->
@@ -230,7 +257,7 @@ fill="#000000" stroke="none">
 
 
             <div data-role="main" class="overscroll">
-         <div class="profile-img" style="display: block;"></div>
+         <div class="user-profile-image" style="display: block;"></div>
          <h2 style="display: block; text-align: center;">Samantha Jones</h2>
 
          <p>samathajones@gmail.com</p>
