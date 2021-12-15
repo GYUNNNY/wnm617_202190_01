@@ -11,9 +11,8 @@
     --color-black: #111;
 
 
-    --font-sans: Roboto, Arial, sans-serif;
-    --font-serif: Merriweather, serif;
-
+    --font-sans: 'Montserrat', sans-serif;
+    --font-serif: 'Merriweather', serif;
     --header-height:  3rem;
 }
 
@@ -26,6 +25,8 @@ body {
    font-family: var(--font-sans);
 }
 
+/*FONT STYLE*/
+h1,
 
 
 /* CORE ELEMENTS */
@@ -98,7 +99,10 @@ p {
    position: relative;
    overflow: hidden;
 }
-[data-role="header"],
+[data-role="header"], {
+  padding-left: 10px;
+}
+
 [data-role="footer"] {
    flex: none;
    height: var(--header-height);
@@ -106,6 +110,7 @@ p {
    border-width: 0;
    background-color: var(--color-white);
    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+section
    position: relative;
    overflow: hidden;
 }
@@ -128,7 +133,7 @@ p {
    display: block;
 }
 [data-role="header"] a {
-   padding: 0 1em;
+   padding: 1em 1em;
 }
 
 .ui-header .ui-title {
@@ -193,7 +198,27 @@ p {
    margin: 1rem 0 0;
 }
 
-
+.form-select select {
+    background-color: #f2f2f2;
+    border: 1px solid var(--color-main-light);
+    padding: 0.5em 1em;
+    font: inherit;
+    border-radius: 4px;
+    width: 100%;
+    -webkit-appearance: none;
+}
+.form-select {
+   position: relative;
+}
+.form-select::after {
+   content: '▼';
+   position: absolute;
+   right: 0.5em;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 0.8em;
+   color: var(--color-main-medium);
+}
 
 /*login-img*/
 #login-image {
@@ -216,14 +241,25 @@ p {
    left: 0;
    width: 100%;
    height: 100%;
+   border-top-left-radius: 8%;
   
 }
 
+.page-title {
+
+}
+
+/*SEARCH BAR*/
+.search-box {
+  margin: 5px;
+}
 .search-bar {
+
 border-radius: 2em;
-margin: 4px -3px;
+position: relative;
+width: 100%;
 z-index: 2;
-padding: 0.2em 0.5em;
+padding: 0.5em 0.5em;
 
 }
 
@@ -251,6 +287,7 @@ padding: 0.2em 0.5em;
 .floater.right { right:1em; }
 .floater.top { top:1em; }
 .floater.bottom { bottom:1em; }
+.floater.center {right:45%; left: 45%;}
 
 /* Circle Button */
 .btn-circle {
@@ -357,8 +394,8 @@ padding: 0.2em 0.5em;
 
 
 .icon {
-   width: 1.5em;
-   height: 1.5em;
+   width: 1.2em;
+   height: 1.2em;
    display: inline-block;
 }
 
@@ -374,7 +411,7 @@ padding: 0.2em 0.5em;
    display: block;
    line-height: 1rem;
    font-size: 0.7rem;
-   color: var(--color-black);
+   color: var(--color-main-dark);
 }
 .nav-icon-set li.active {
    background-color: var(--color-main-light);
@@ -385,11 +422,11 @@ padding: 0.2em 0.5em;
 .user-profile-image {
   /*height: 15vh;
   width: 15vh;*/
-  border-radius: 2em;
+  border-radius: 10em;
   border: none;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3em;
+ padding-top: 3em;
  /* background-image: url(../img/profile1.jpg);*/
   
   background-size: cover;
@@ -494,6 +531,16 @@ padding: 0.2em 0.5em;
 .animal-popup-image img {
    max-width: 50px;
 }
+
+.animal-profile-bottom .section {
+    display: none;
+}
+.animal-profile-bottom .section.active {
+    display: block;
+}
+.animal-profile-middle li.active {
+    background-color: var(--color-main-light);
+}
 /*.user-profile-image img {
    width: 100%;
    height: 30vh;
@@ -519,8 +566,17 @@ padding: 0.2em 0.5em;
    padding: 0;
 }
 
+.hotdog {
+  border; 0.1px solid var(--color-main-light);
 
-
+  padding: .5em .8em;
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+}
+.hotdog .medium {
+  background-color: var(--color-main-light);
+}
 
 
 .image-picker.replace {

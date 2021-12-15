@@ -149,7 +149,8 @@ function makeStatement($data) {
                VALUES
                (?, ?, md5(?), 'http://via.placeholder.com/400/?text=USER', NOW())
                ",$p,false);
-            return ["id" => $c->lastInsertId()];
+            $r['id'] = $c->lastInsertId();
+            return $r;
 
          case "insert_animal":
             $r = makeQuery($c,"INSERT INTO
@@ -158,7 +159,8 @@ function makeStatement($data) {
                VALUES
                (?, ?, ?, ?, ?, 'http://via.placeholder.com/400/?text=ANIMAL', NOW())
                ",$p,false);
-            return ["id" => $c->lastInsertId()];
+            $r['id'] = $c->lastInsertId();
+            return $r;
 
          case "insert_location":
             $r = makeQuery($c,"INSERT INTO
@@ -167,7 +169,8 @@ function makeStatement($data) {
                VALUES
                (?, ?, ?, ?, 'http://via.placeholder.com/400/?text=PHOTO', 'http://via.placeholder.com/400/?text=ICON', NOW())
                ",$p,false);
-            return ["id" => $c->lastInsertId()];
+            $r['id'] = $c->lastInsertId();
+            return $r;
 
 
          /* UPDATE */
@@ -180,7 +183,7 @@ function makeStatement($data) {
                   `img` = ?
                WHERE `id` = ?
                ",$p,false);
-            return ["result" => "success"];
+            return $r;
 
          case "update_user":
             $r = makeQuery($c,"UPDATE
@@ -191,7 +194,7 @@ function makeStatement($data) {
                   `email` = ?
                WHERE `id` = ?
                ",$p,false);
-            return ["result" => "success"];
+            return $r;
 
          case "update_user_password":
             $r = makeQuery($c,"UPDATE
@@ -200,7 +203,7 @@ function makeStatement($data) {
                   `password` = md5(?)
                WHERE `id` = ?
                ",$p,false);
-            return ["result" => "success"];
+            return $r;
 
          case "update_user_image":
             $r = makeQuery($c,"UPDATE
@@ -208,7 +211,7 @@ function makeStatement($data) {
                SET `img` = ?
                WHERE `id` = ?
                ",$p,false);
-            return ["result" => "success"];
+            return $r;
 
          case "update_animal":
             $r = makeQuery($c,"UPDATE
@@ -220,7 +223,7 @@ function makeStatement($data) {
                   `description` = ?
                WHERE `id` = ?
                ",$p,false);
-            return ["result" => "success"];
+            return $r;
 
          case "update_animal_image":
             $r = makeQuery($c,"UPDATE
@@ -228,7 +231,7 @@ function makeStatement($data) {
                SET `img` = ?
                WHERE `id` = ?
                ",$p,false);
-            return ["result" => "success"];
+            return $r;
 
          case "update_location":
             $r = makeQuery($c,"UPDATE
@@ -237,17 +240,17 @@ function makeStatement($data) {
                   `description` = ?
                WHERE `id` = ?
                ",$p,false);
-            return ["result" => "success"];
+            return $r;
 
 
          /* DELETE */
          case "delete_animal":
             $r = makeQuery($c,"DELETE FROM `track_202190_animals` WHERE `id` = ?",$p,false);
-            return ["result" => "success"];
+            return $r;
 
          case "delete_location":
             $r = makeQuery($c,"DELETE FROM `track_202190_locations` WHERE `id` = ?",$p,false);
-            return ["result" => "success"];
+            return $r;
 
 
          default: return ["error"=>"No Matched Type"];
