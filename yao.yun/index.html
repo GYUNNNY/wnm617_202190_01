@@ -270,11 +270,11 @@ fill="#000000" stroke="none">
 
    <section data-role="page" id="page-user-profile">
       <header data-role="header">
-         <h1 style="padding: auto;">Profile</h1>
+         <h1 style="padding-top: .1em;">Profile</h1>
          
                
-            <!--    <a href="#page-user-settings" class="right">Setting</a> -->
-         
+              <!--  <a href="#page-user-settings" class="right">Setting</a>
+          -->
       </header>
 
       <div data-role="main" class="overscroll">
@@ -286,7 +286,7 @@ fill="#000000" stroke="none">
 
    <section data-role="page" id="page-user-settings">
       <header data-role="header">
-         <h1>User Edit</h1>
+         <h1 style="padding-top: .9em;">User Edit</h1>
          <ul>
             <li><a href="#" data-rel="back">Back</a></li>
          </ul>
@@ -296,9 +296,10 @@ fill="#000000" stroke="none">
             <li><a href="#page-user-edit">Update User Info</a></li>
             <li><a href="#page-user-edit-password">Change Password</a></li>
             <li><a href="#page-user-upload">Change Photo</a></li>
-            <li><a href="#" class="js-logout">Logout</a></li>
-         </ul>
+           <!--  <li><a href="#" class="js-logout">Logout</a></li> -->
+
       </div>
+      <button class="form-button js-logout" style="margin:5em 0;"> Log out</button>
    </section>
 
    <section data-role="page" id="page-user-edit">
@@ -334,6 +335,8 @@ fill="#000000" stroke="none">
       <div data-role="main">
          <input type="hidden" id="user-upload-filename">
          <label class="image-picker replace">
+
+            <h6 class="padding-md upload-photo-box">Upload Photo</h6>
             <input type="file" data-role="none">
          </label>
       </div>
@@ -516,7 +519,7 @@ fill="#000000" stroke="none">
          <div class="animal-profile-top">
             <img src="https://via.placeholder.com/600x600?text=Animal" alt="" style="width:100%;height:100%;object-fit:cover">
             <div class="floater bottom right">
-               <a href="#page-animal-edit-upload" style="font-size:1.25em">
+              <a href="#page-animal-edit-upload" style="font-size:1.25em">
                   <img src="img/icons/pencil.svg" class="icon">
                </a>
             </div>
@@ -548,6 +551,8 @@ fill="#000000" stroke="none">
          </ul>
       </header>
    </section>
+
+  
 
    <section data-role="page" id="page-animal-edit-upload">
       <header data-role="header">
